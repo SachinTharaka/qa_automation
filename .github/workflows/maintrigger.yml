@@ -5,10 +5,13 @@ jobs:
   trigger-test:
      runs-on: ubuntu-latest
      steps:
-      - name: trigger the automated test in another repo
-        uses: actions/checkout@v3
+      - name: Trigger Workflow in Another Repository
+        run: |
+          # Set the required variables
+          repo_owner="SachinTharaka" 
+          repo_name="selenium"  
+          event_type="my-event1" 
+          service=${{ github.event.inputs.target_service }}"
+          version="${{ github.event.inputs.target_version }}"
        
-        with:
-          token: ${{ secrets.REPO }}
-          repository: SachinTharaka/selenium
-          event-type: my-event1
+     
