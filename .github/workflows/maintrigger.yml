@@ -7,9 +7,6 @@ jobs:
      steps:
       - name: Trigger Workflow in Another Repository
         uses: actions/checkout@v3
-         
-      - name: Trigger Workflow in Another Repository
-        uses: ./.github/workflows/main_trigger.yml
        
        
         with:
