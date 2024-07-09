@@ -11,4 +11,4 @@ jobs:
         with:
           token: ${{ secrets.REPO }}
           repository: SachinTharaka/selenium
-          event-type: my-event
+          event-type: my-event1
